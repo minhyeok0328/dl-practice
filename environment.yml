@@ -1,0 +1,26 @@
+name: deep-learning-env
+channels:
+  - defaults
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - selenium
+  - requests
+  - bs4
+  - flask
+  - seaborn
+  - ipykernel
+  - libcusparse=11.7.5.86
+  - scikit-learn-intelex
+  - torchvision
+  - torchaudio
+  - cudatoolkit
+  - keras
+  - pytorch=2.1.2
+  - pytorch-cuda=11.8

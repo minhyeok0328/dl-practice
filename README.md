@@ -11,3 +11,7 @@
 |jupyter notebook|
 
 [docker 이미지 링크](https://hub.docker.com/repository/docker/dockgobusan/dl)
+
+# 설치
+
+`conda env create -f environment.yml`

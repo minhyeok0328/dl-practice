@@ -2,8 +2,8 @@ version: '3'
 
 services:
   jupyter:
-    image: dockgobusan/dl:0.1
-    container_name: backend
+    image: dockgobusan/dl:0.2
+    container_name: dl
     build: .
     ports:
       - "8888:8888"
@@ -17,19 +17,19 @@ services:
       - default
     restart: always
 
-  mysql:
-    container_name: database
-    image: mysql:8.0.36
-    ports:
-      - "3306:3306"
-    environment:
-      MYSQL_ROOT_PASSWORD: password
-      TZ: Asia/Seoul
-    networks:
-      - default
-    volumes:
-      - ./data/mysql/:/var/lib/mysql
-    restart: always
+  # mysql:
+  #   container_name: database
+  #   image: mysql:8.0.36
+  #   ports:
+  #     - "3306:3306"
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: password
+  #     TZ: Asia/Seoul
+  #   networks:
+  #     - default
+  #   volumes:
+  #     - ./data/mysql/:/var/lib/mysql
+  #   restart: always
 
 networks:
   default:
