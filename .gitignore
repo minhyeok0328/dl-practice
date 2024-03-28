@@ -1,0 +1,21 @@
+# Ignore Docker-related files
+docker-compose.override.yml
+
+# Ignore container logs
+logs/
+*.log
+
+# Ignore Docker state files
+*.state
+
+# Ignore system-specific files
+.DS_Store
+
+# database
+data/mysql/*
+
+#jupyter notebook
+.ipynb
+
+# idea
+.idea
