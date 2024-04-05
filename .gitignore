@@ -19,3 +19,7 @@ data/mysql/*
 
 # idea
 .idea
+
+# training data
+training-data/*
+example/**/data/*

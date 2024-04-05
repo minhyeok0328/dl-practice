@@ -2,7 +2,7 @@ version: '3'
 
 services:
   jupyter:
-    image: dockgobusan/dl:0.2
+    image: dockgobusan/dl:0.3
     container_name: dl
     build: .
     ports:
